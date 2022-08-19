@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js" defer></script>
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cards__section">
+        <div class="card__box card__front-box">
+          <img src="./images/card-logo.svg" alt="" class="card__front-logo" />
+
+          <h1 class="card__number">0111 2002 0111 2026</h1>
+
+          <div class="card__details">
+            <p class="card__name">Farah Zarouali</p>
+            <div class="card__expires">
+              <p class="card__expires-month">01</p>
+              <p>/</p>
+              <p class="card__expires-year">11</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__box card__back-box">
+          <p class="card__cvc">111</p>
+        </div>
+      </div>
+      <div class="form__section">
+        <div class="form__wrapper form__wrapper-left"></div>
+        <div class="form__wrapper form__wrapper-right"></div>
+        <form action="#" class="form">
+          <div class="form__group">
+            <label for="cardholder" class="form__label">Cardholder name</label>
+            <input
+              type="text"
+              class="form__input"
+              id="cardholder"
+              name="cardholder"
+              placeholder="e.g. Farah Zarouali"
+              autocomplete="off"
+            />
+            <p class="form__group-error">Can't be blank</p>
+          </div>
+          <div class="form__group">
+            <label for="cardnum" class="form__label">Card number</label>
+            <input
+              type="text"
+              class="form__input"
+              id="cardnum"
+              name="cardnum"
+              placeholder="e.g. 0111 2002 0111 2026"
+              autocomplete="off"
+            />
+            <p class="form__group-error">Can't be blank</p>
+          </div>
+          <div class="form__groups">
+            <div class="form__group">
+              <p class="form__label">Exp. Date (mm/yy)</p>
+              <div class="form__inputs">
+                <input
+                  type="text"
+                  class="form__input"
+                  id="cardmonth"
+                  name="carddate"
+                  placeholder="MM"
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  class="form__input"
+                  id="cardyear"
+                  name="carddate"
+                  placeholder="YY"
+                  autocomplete="off"
+                />
+              </div>
+
+              <p class="form__group-error">Can't be blank</p>
+            </div>
+            <div class="form__group">
+              <label for="cardcvc" class="form__label">cvc</label>
+              <input
+                type="text"
+                class="form__input"
+                id="cardcvc"
+                name="cardcvc"
+                placeholder="e.g. 111"
+                autocomplete="off"
+              />
+              <p class="form__group-error">Can't be blank</p>
+            </div>
+          </div>
+          <button class="btn btn__continue">Continue</button>
+        </form>
+        <div class="form__submited">
+          <img
+            src="./images/icon-complete.svg"
+            alt="Icon complete"
+            class="form__submited-icon"
+          />
+
+          <h2 class="form__thanks">Thank you</h2>
+          <p class="form__submited-text">We've added your card details</p>
+
+          <a href="#" class="btn btn__return">Return</a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js"
+      integrity="sha512-SvgzybymTn9KvnNGu0HxXiGoNeOi0TTK7viiG0EGn2Qbeu/NFi3JdWrJs2JHiGA1Lph+dxiDv5F9gDlcgBzjfA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

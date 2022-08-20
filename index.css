@@ -11,7 +11,8 @@
     hsl(249, 99%, 64%),
     hsl(278, 94%, 30%)
   );
-
+  /* - Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+  - Red (input errors): hsl(0, 100%, 66%) */
 }
 * {
   margin: 0;
@@ -298,9 +299,10 @@ html {
   gap: 1rem;
 }
 .form__label {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--color-violet);
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 .form__input {
   font-size: 1.6rem;

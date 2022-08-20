@@ -85,7 +85,7 @@ InputcardHolder.addEventListener("input", function () {
   cardHolderName.textContent = this.value;
 
   // Reset value
-  if (this.value === "") cardHolderName.textContent = "Farah Zarouali";
+  if (this.value === "") cardHolderName.textContent = "Jane Appaulesd";
   // Unshow error message if field is not empty and doesn't contains number
   if (this.value !== "") {
     this.nextElementSibling.style.opacity = 0;
@@ -193,7 +193,7 @@ btnReturn.addEventListener("click", function () {
   cardCvc.textContent = "111";
   cardMonthExpires.textContent = "01";
   cardYearExpires.textContent = "11";
-  cardHolderName.textContent = "Farah Zarouali";
+  cardHolderName.textContent = "Jane Appaulesd";
 
   // Removing the animation from wrappers
   setTimeout(function () {

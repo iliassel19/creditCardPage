@@ -386,6 +386,11 @@ html {
 .btn:hover {
   opacity: 0.6;
 }
+.btn:focus {
+  outline: none;
+  transform: translateY(-0.6rem);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
 
 @keyframes hideForm {
   0% {

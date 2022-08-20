@@ -31,6 +31,11 @@ const cleaveCvc = new Cleave("#cardcvc", {
   blocks: [3],
 });
 
+// Condition function to check if the string contains number
+const containsNumber = function (str) {
+  return /[0-9]/.test(str);
+};
+
 // HANDLERS
 inputCardNum.addEventListener("input", function () {
   // UI Update
@@ -93,11 +98,6 @@ InputcardHolder.addEventListener("input", function () {
     this.classList.remove("form__input-error");
   }
 
-  // Condition function to check if the string contains number
-  const containsNumber = function (str) {
-    return /[0-9]/.test(str);
-  };
-
   // Show error if the nameholder value inputed contains number
   if (containsNumber(this.value)) {
     this.nextElementSibling.textContent = "Name can't contain numbers.";
@@ -149,6 +149,12 @@ btnContinue.addEventListener("click", function (e) {
     InputcardHolder.value === ""
   )
     return;
+  if (containsNumber(InputcardHolder.value)) {
+    InputcardHolder.nextElementSibling.textContent =
+      "Name can't contain numbers.";
+    InputcardHolder.nextElementSibling.style.opacity = 1;
+    return;
+  }
 
   // Adding animation to hide form and show final phase
   formWrapper.forEach(

@@ -226,7 +226,7 @@ html {
     flex: unset;
 
     height: auto;
-    padding: 0 3.2rem;
+    padding: 0 3.2rem 3.2rem 3.2rem;
   }
 }
 
@@ -266,7 +266,7 @@ html {
   content: "";
   width: 50%;
   height: 0%;
-  background-color: #fff;
+  background-color: var(--color-white);
   position: absolute;
   left: 0;
   top: 0;
@@ -277,7 +277,7 @@ html {
   content: "";
   width: 50%;
   height: 0%;
-  background-color: #fff;
+  background-color: var(--color-white);
   position: absolute;
   right: 0;
   bottom: 0;

@@ -72,8 +72,7 @@ I think that I need more to sharpen my knowledge in css and also in commenting m
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@iliassel19](https://www.frontendmentor.io/profile/iliassel19)
 
 ## Acknowledgments
 
